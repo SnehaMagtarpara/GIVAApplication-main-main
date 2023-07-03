@@ -247,21 +247,13 @@ class HomePage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSo
             {
                 navigation8()
             }
-            
-            
-           
-           
+        
         }
         else
         {
             
         }
     }
-    
-    
-    
-    
-    
      func navigation()
      {
          let naviget = storyboard?.instantiateViewController(withIdentifier: "PendantList") as! PendantList

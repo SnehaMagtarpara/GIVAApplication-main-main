@@ -39,10 +39,10 @@ class LogInPage: UIViewController {
         
         if phoneNumberTextField.text?.count ?? 0 != 10
         {
-            //showalert()
+            showalert()
             navigation()
         }
-       // savealert()
+        savealert()
         
         
     }

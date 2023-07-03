@@ -70,13 +70,9 @@ class OfferPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
             cell3.img3.image = img3[indexPath.row]
             cell3.nameLabel3.text = name3[indexPath.row]
             cell3.img3.layer.cornerRadius = 45
-            
-            
             return cell3
-            
-            
+
         }
-        
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == self.cv
@@ -93,8 +89,19 @@ class OfferPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
         }
         
     }
-    
-    
-
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == self.cv3
+        {
+            if indexPath.row == 0
+            {
+                
+            }
+        }
+    }
+    func setNavigation()
+    {
+        let naviget = storyboard?.instantiateViewController(withIdentifier: "PendantList") as! PendantList
+        navigationController?.pushViewController(naviget, animated: true)
+        
+    }
 }
